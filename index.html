@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Saral Technologies
+	</title>
+</head>
+<body>
+<h2>Question:</h2>
+<p>Write a program to find if a number is a good number. A positive integer is a good number if all its digits are the same, For example,1,2,5,11,88 numbers all are goods numbers.but 13,319 are not good numbers.Method signature: public boolean is Goodnumber(int N).
+Examples:<br/>
+1.N=5, Ans;Bad<br/>
+2.N=12, Ans;Good<br/>
+3.N=22, Ans;Good<br/>
+4.N=783, Ans;Bad<br/>
+<br/>
+<br/>
+Enter digit.....
+<br/>
+
+</p>
+<b>You are Entered : <b>
+
+<script>
+const num =window.prompt("Enter digit?");
+document.write(num+"<br/>Output:")
+let len=num.toString().length;
+let digits=num.toString().split('');
+var realDigits=digits.map(Number)
+var i=1
+var a=2
+
+if(len>1)
+	{
+    for(i=1;i<len;i++)
+{
+	
+    if(digits[i]==digits[i+1])
+     {
+    	 a=a+1;
+         continue;
+       
+     }
+else{
+
+	    break;
+	}
+}
+if(a==len)
+	{
+    	document.write("Good")
+    
+    }
+else{
+	
+    	document.write("Bad")
+	}
+
+    }
+else{
+
+	document.write("Good")
+
+}
+</script>
+
+<P>
+&copy Ali Afzal Khan and Saral technologies
+
+</P>
+
+</body>
+</html>
